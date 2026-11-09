@@ -87,16 +87,21 @@
         .filter-black {
             filter: brightness(0) invert(0);
         }
+
+        /* ===== GÓC VUÔNG TINH TẾ (SHARP ARCHITECTURAL CORNERS) ===== */
+        [class*="rounded"], button, .btn, .chip, .icon-btn, .thumbnail-btn, img, article, input, textarea, select {
+            border-radius: 0px !important;
+        }
     </style>
 </head>
 <body class="bg-brand-light dark:bg-[#0f0a07] text-brand-text dark:text-[#f3e5ab] font-sans antialiased overflow-x-hidden transition-colors duration-700">
 
     <!-- Nút cuộn lên đầu trang -->
-    <button id="backToTopBtn" class="fixed bottom-20 right-6 z-[60] w-12 h-12 rounded-full bg-brand-gold text-white dark:text-brand-dark shadow-[0_4px_20px_rgba(212,175,55,0.4)] flex items-center justify-center hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none translate-y-4">
+    <button id="backToTopBtn" class="fixed bottom-20 right-6 z-[60] w-12 h-12 rounded-none bg-brand-gold text-white dark:text-brand-dark shadow-[0_4px_20px_rgba(212,175,55,0.4)] flex items-center justify-center hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none translate-y-4">
         <i class="fa-solid fa-chevron-up text-lg"></i>
     </button>
 
-    <button id="themeToggleBtn" class="fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-full bg-white dark:bg-brand-card shadow-[0_4px_20px_rgba(0,0,0,0.15)] dark:shadow-[0_4px_20px_rgba(212,175,55,0.2)] flex items-center justify-center border border-gray-200 dark:border-brand-gold/30 hover:scale-110 transition-transform duration-300 group">
+    <button id="themeToggleBtn" class="fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-none bg-white dark:bg-brand-card shadow-[0_4px_20px_rgba(0,0,0,0.15)] dark:shadow-[0_4px_20px_rgba(212,175,55,0.2)] flex items-center justify-center border border-gray-200 dark:border-brand-gold/30 hover:scale-110 transition-transform duration-300 group">
         <i class="fa-solid fa-moon text-brand-muted hidden dark:block group-hover:text-brand-gold transition-colors text-xl"></i>
         <i class="fa-solid fa-sun text-brand-gold block dark:hidden text-xl"></i>
     </button>
@@ -113,7 +118,7 @@
             <a href="#tac-gia" class="nav-link text-xs font-semibold uppercase tracking-[0.2em] transition-colors duration-300 text-white hover:text-brand-gold">Tác Giả</a>
         </div>
         
-        <a href="#san-pham" id="navCallBtn" class="hidden md:flex items-center gap-2 border px-4 py-2 rounded-md transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10">
+        <a href="#san-pham" id="navCallBtn" class="hidden md:flex items-center gap-2 border px-4 py-2 rounded-none transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10">
             <i id="navCallIcon" class="fa-solid fa-phone text-sm text-brand-gold group-hover:text-brand-dark transition-colors duration-300"></i>
             <span id="navCallText" class="text-xs font-semibold tracking-widest uppercase text-brand-gold group-hover:text-brand-dark transition-colors duration-300">Đặt Hàng</span>
         </a>
@@ -137,12 +142,12 @@
                     <span class="block">Khai Kỷ</span>
                     <span class="block">Nghênh Tân</span>
                 </h1>
-                <div class="w-16 h-[2px] bg-brand-gold mt-4 rounded-full opacity-80 shadow-[0_0_10px_rgba(212,175,55,0.5)]"></div>
+                <div class="w-16 h-[2px] bg-brand-gold mt-4 rounded-none opacity-80 shadow-[0_0_10px_rgba(212,175,55,0.5)]"></div>
                 <p class="text-brand-gold-light/90 text-base md:text-lg max-w-md mt-4 font-light leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                     Tuyệt tác nghệ thuật đúc đồng mạ vàng, biểu tượng vĩnh cửu của sức mạnh, sự thịnh vượng và cội nguồn dân tộc.
                 </p>
                 <div class="pt-8">
-                    <a href="#kham-pha" class="group relative inline-flex items-center justify-center px-10 py-3.5 text-xs font-semibold tracking-[0.2em] uppercase text-brand-gold bg-transparent border border-brand-gold/50 rounded-md overflow-hidden transition-all duration-500 hover:border-brand-gold">
+                    <a href="#kham-pha" class="group relative inline-flex items-center justify-center px-10 py-3.5 text-xs font-semibold tracking-[0.2em] uppercase text-brand-gold bg-transparent border border-brand-gold/50 rounded-none overflow-hidden transition-all duration-500 hover:border-brand-gold">
                         <span class="relative z-10 transition-colors duration-500 group-hover:text-white dark:group-hover:text-brand-dark">Khám Phá Ngay</span>
                         <div class="absolute inset-0 h-full w-full bg-brand-gold transform scale-y-0 origin-bottom transition-transform duration-500 ease-out group-hover:scale-y-100"></div>
                     </a>
@@ -171,7 +176,7 @@
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 relative">
                 <!-- 01: Nghênh Tân -->
                 <div class="group relative z-10 flex flex-col items-center text-center reveal-up">
-                    <div class="relative w-full aspect-[4/5] mx-auto rounded-lg overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mx-auto rounded-none overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
                         <div class="absolute inset-0 bg-black/10 dark:bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img src="DSC09537.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1e140d/D4AF37?text=Nghenh+Tan';" alt="Rắn Nghênh Tân" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out">
                     </div>
@@ -186,7 +191,7 @@
 
                 <!-- 02: Nghênh Hưng -->
                 <div class="group relative z-10 flex flex-col items-center text-center reveal-up" style="transition-delay: 100ms;">
-                    <div class="relative w-full aspect-[4/5] mx-auto rounded-lg overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mx-auto rounded-none overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
                         <div class="absolute inset-0 bg-black/10 dark:bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img src="DSC09540.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1e140d/D4AF37?text=Nghenh+Hung';" alt="Rắn Nghênh Hưng" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out">
                     </div>
@@ -201,7 +206,7 @@
 
                 <!-- 03: Nghênh Cát -->
                 <div class="group relative z-10 flex flex-col items-center text-center reveal-up" style="transition-delay: 200ms;">
-                    <div class="relative w-full aspect-[4/5] mx-auto rounded-lg overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mx-auto rounded-none overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
                         <div class="absolute inset-0 bg-black/10 dark:bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img src="DSC09574.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1e140d/D4AF37?text=Nghenh+Cat';" alt="Rắn Nghênh Cát" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out">
                     </div>
@@ -216,7 +221,7 @@
 
                 <!-- 04: Nghênh Viên -->
                 <div class="group relative z-10 flex flex-col items-center text-center reveal-up" style="transition-delay: 300ms;">
-                    <div class="relative w-full aspect-[4/5] mx-auto rounded-lg overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mx-auto rounded-none overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
                         <div class="absolute inset-0 bg-black/10 dark:bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img src="DSC09581.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1e140d/D4AF37?text=Nghenh+Vien';" alt="Rắn Nghênh Viên" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out">
                     </div>
@@ -231,7 +236,7 @@
 
                 <!-- 05: Nghênh Thịnh -->
                 <div class="group relative z-10 flex flex-col items-center text-center reveal-up" style="transition-delay: 400ms;">
-                    <div class="relative w-full aspect-[4/5] mx-auto rounded-lg overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mx-auto rounded-none overflow-hidden mb-4 shadow-md dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:shadow-xl dark:group-hover:shadow-[0_15px_40px_rgba(212,175,55,0.2)] group-hover:-translate-y-2 cursor-pointer">
                         <div class="absolute inset-0 bg-black/10 dark:bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img src="DSC09584.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1e140d/D4AF37?text=Nghenh+Thinh';" alt="Rắn Nghênh Thịnh" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out">
                     </div>
@@ -253,7 +258,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,420px)] gap-10 lg:gap-20 items-center mb-16">
                     <div class="reveal-up relative w-full max-w-[340px] sm:max-w-[400px] mx-auto lg:max-w-none order-1 lg:order-2">
                         <div class="absolute -inset-3 rounded-[28px] border border-brand-gold/30 pointer-events-none"></div>
-                        <div class="relative rounded-2xl overflow-hidden bg-[#0f0a07] shadow-2xl">
+                        <div class="relative rounded-none overflow-hidden bg-[#0f0a07] shadow-2xl">
                             <img src="che-tac-ran.webp" width="1700" height="1526" alt="Nghệ thuật chế tác linh vật – rắn vàng dát vàng 24K" class="w-full h-auto block" loading="lazy">
                         </div>
                     </div>
@@ -280,8 +285,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-gray-300 dark:border-brand-gold/20 relative transition-colors duration-700 reveal-up">
                     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-brand-gold to-transparent"></div>
                     
-                    <div class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
-                        <div class="mb-6 w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
+                    <div class="group flex flex-col items-center text-center p-8 rounded-none bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
+                        <div class="mb-6 w-16 h-16 rounded-none bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
                             <i class="fa-solid fa-hammer text-brand-gold text-2xl group-hover:text-brand-text dark:group-hover:text-white transition-colors duration-500 relative z-10"></i>
                         </div>
                         <div>
@@ -290,8 +295,8 @@
                         </div>
                     </div>
                     
-                    <div class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
-                        <div class="mb-6 w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
+                    <div class="group flex flex-col items-center text-center p-8 rounded-none bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
+                        <div class="mb-6 w-16 h-16 rounded-none bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
                             <svg class="w-6 h-6 text-brand-gold group-hover:text-brand-text dark:group-hover:text-white transition-colors duration-500 relative z-10" fill="currentColor" viewBox="0 0 256 256">
                                 <path d="M239.5,121.73l-45.71-15.35L178.43,60.67a12,12,0,0,0-22.86,0l-15.36,45.71L94.5,121.73a12,12,0,0,0,0,22.86l45.71,15.36,15.36,45.71a12,12,0,0,0,22.86,0l15.36-45.71,45.71-15.36A12,12,0,0,0,239.5,121.73Zm-65.73,34a12,12,0,0,0-7.5,7.5l-12.77,38L140.73,163.2a12,12,0,0,0-7.5-7.5l-38-12.77,38-12.77a12,12,0,0,0,7.5-7.5l12.77-38,12.77,38a12,12,0,0,0,7.5,7.5l38,12.77ZM112,56A8,8,0,0,1,104,64H88V80a8,8,0,0,1-16,0V64H56a8,8,0,0,1,0-16H72V32a8,8,0,0,1,16,0V48H104A8,8,0,0,1,112,56ZM88,176a8,8,0,0,0-8,8v16H64a8,8,0,0,0,0,16H80v16a8,8,0,0,0,16,0V216h16a8,8,0,0,0,0-16H96V184A8,8,0,0,0,88,176Z"></path>
                             </svg>
@@ -302,8 +307,8 @@
                         </div>
                     </div>
                     
-                    <div class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
-                        <div class="mb-6 w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
+                    <div class="group flex flex-col items-center text-center p-8 rounded-none bg-white/70 dark:bg-[#1e140d]/60 backdrop-blur-sm border border-gray-200 dark:border-brand-gold/10 hover:border-brand-gold/40 hover:bg-white dark:hover:bg-[#1e140d]/90 transition-all duration-500 cursor-pointer shadow-sm hover:shadow-md dark:shadow-lg hover:-translate-y-2">
+                        <div class="mb-6 w-16 h-16 rounded-none bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/20 group-hover:scale-110 transition-all duration-500 group-hover:border-brand-gold/50 relative overflow-hidden">
                             <i class="fa-regular fa-gem text-brand-gold text-2xl group-hover:text-brand-text dark:group-hover:text-white transition-colors duration-500 relative z-10"></i>
                         </div>
                         <div>
@@ -324,49 +329,49 @@
         <div class="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-20 relative z-10">
             <!-- Cột Trái: Ảnh -->
             <div class="w-full lg:w-1/2 flex flex-col gap-4">
-                <div class="relative w-full flex-1 min-h-[400px] lg:min-h-0 overflow-hidden rounded-xl md:rounded-2xl border border-gray-200 dark:border-white/5 shadow-md dark:shadow-xl group transition-all duration-700">
+                <div class="relative w-full flex-1 min-h-[400px] lg:min-h-0 overflow-hidden rounded-none md:rounded-none border border-gray-200 dark:border-white/5 shadow-md dark:shadow-xl group transition-all duration-700">
                     <div class="absolute inset-0 bg-brand-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-                    <img id="mainProductImage" src="DSC09537.jpg" alt="Chi tiết sản phẩm" class="absolute inset-0 w-full h-full object-cover rounded-xl md:rounded-2xl transform transition-transform duration-1000 group-hover:scale-105">
+                    <img id="mainProductImage" src="DSC09537.jpg" alt="Chi tiết sản phẩm" class="absolute inset-0 w-full h-full object-cover rounded-none md:rounded-none transform transition-transform duration-1000 group-hover:scale-105">
                 </div>
                 
                 <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide shrink-0 mt-4 snap-x">
-                    <button data-image="DSC09537.jpg" onclick="changeMainImage('DSC09537.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-brand-gold opacity-100 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09537.jpg" onclick="changeMainImage('DSC09537.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-brand-gold opacity-100 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09537.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09549.jpg" onclick="changeMainImage('DSC09549.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09549.jpg" onclick="changeMainImage('DSC09549.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09549.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09559.jpg" onclick="changeMainImage('DSC09559.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09559.jpg" onclick="changeMainImage('DSC09559.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09559.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09563.jpg" onclick="changeMainImage('DSC09563.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09563.jpg" onclick="changeMainImage('DSC09563.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09563.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09570.jpg" onclick="changeMainImage('DSC09570.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09570.jpg" onclick="changeMainImage('DSC09570.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09570.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09527.jpg" onclick="changeMainImage('DSC09527.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09527.jpg" onclick="changeMainImage('DSC09527.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09527.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09540.jpg" onclick="changeMainImage('DSC09540.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09540.jpg" onclick="changeMainImage('DSC09540.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09540.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09543 copy.png" onclick="changeMainImage('DSC09543 copy.png', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09543 copy.png" onclick="changeMainImage('DSC09543 copy.png', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09543 copy.png" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09543.jpg" onclick="changeMainImage('DSC09543.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09543.jpg" onclick="changeMainImage('DSC09543.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09543.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09574.jpg" onclick="changeMainImage('DSC09574.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09574.jpg" onclick="changeMainImage('DSC09574.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09574.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09575.jpg" onclick="changeMainImage('DSC09575.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09575.jpg" onclick="changeMainImage('DSC09575.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09575.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09581.jpg" onclick="changeMainImage('DSC09581.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09581.jpg" onclick="changeMainImage('DSC09581.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09581.jpg" class="w-full h-full object-cover">
                     </button>
-                    <button data-image="DSC09584.jpg" onclick="changeMainImage('DSC09584.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-lg overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
+                    <button data-image="DSC09584.jpg" onclick="changeMainImage('DSC09584.jpg', this)" class="thumbnail-btn flex-shrink-0 w-20 md:w-24 aspect-square rounded-none overflow-hidden border border-gray-200 dark:border-transparent opacity-60 hover:opacity-100 hover:border-brand-gold/50 transition-all cursor-pointer relative bg-gray-50 dark:bg-black/20 shadow-sm snap-start">
                         <img src="DSC09584.jpg" class="w-full h-full object-cover">
                     </button>
                 </div>
@@ -397,23 +402,23 @@
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                             <label class="cursor-pointer group/model block h-full">
                                 <input type="radio" name="model" value="nghenhtan" class="peer sr-only" checked>
-                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Tân</div>
+                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Tân</div>
                             </label>
                             <label class="cursor-pointer group/model block h-full">
                                 <input type="radio" name="model" value="nghenhhung" class="peer sr-only">
-                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Hưng</div>
+                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Hưng</div>
                             </label>
                             <label class="cursor-pointer group/model block h-full">
                                 <input type="radio" name="model" value="nghenhcat" class="peer sr-only">
-                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Cát</div>
+                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Cát</div>
                             </label>
                             <label class="cursor-pointer group/model block h-full">
                                 <input type="radio" name="model" value="nghenhvien" class="peer sr-only">
-                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Viên</div>
+                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Viên</div>
                             </label>
                             <label class="cursor-pointer group/model block h-full">
                                 <input type="radio" name="model" value="nghenhthinh" class="peer sr-only">
-                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Thịnh</div>
+                                <div class="h-full flex items-center justify-center py-3 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[13px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Nghênh Thịnh</div>
                             </label>
                         </div>
                     </div>
@@ -423,19 +428,19 @@
                         <div class="grid grid-cols-2 gap-3">
                             <label class="cursor-pointer group/mat block h-full">
                                 <input type="radio" name="material" value="sonmai" class="peer sr-only">
-                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đá - Sơn mài</div>
+                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đá - Sơn mài</div>
                             </label>
                             <label class="cursor-pointer group/mat block h-full">
                                 <input type="radio" name="material" value="madong" class="peer sr-only">
-                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đồng - Mạ đồng</div>
+                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đồng - Mạ đồng</div>
                             </label>
                             <label class="cursor-pointer group/mat block h-full">
                                 <input type="radio" name="material" value="datvang" class="peer sr-only" checked>
-                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đồng - Dát vàng</div>
+                                <div class="h-full min-h-[52px] flex items-center justify-center py-2.5 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none whitespace-nowrap">Cốt đồng - Dát vàng</div>
                             </label>
                             <label class="cursor-pointer group/mat block h-full" id="velamOption">
                                 <input type="radio" name="material" value="velam" class="peer sr-only">
-                                <div class="h-full min-h-[52px] flex flex-col items-center justify-center py-2 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-md text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none">
+                                <div class="h-full min-h-[52px] flex flex-col items-center justify-center py-2 px-2 bg-gray-50 dark:bg-transparent border border-gray-300 dark:border-brand-gold/20 rounded-none text-brand-text dark:text-[#dcd0c4] text-[11px] sm:text-[12px] text-center font-medium dark:font-normal transition-all peer-checked:bg-brand-gold/20 peer-checked:border-brand-gold peer-checked:text-brand-dark dark:peer-checked:text-brand-gold hover:border-brand-gold/50 shadow-sm dark:shadow-none">
                                     <span>Vẽ Lam</span>
                                     <span class="text-[10px] sm:text-[11px] font-normal dark:font-light mt-0.5 opacity-70 whitespace-nowrap">(Mạ bạc đuôi)</span>
                                 </div>
@@ -455,7 +460,7 @@
                      </div>
                      <p id="vatNote" class="text-right text-gray-600 dark:text-[#dcd0c4] text-[12px] mb-4 hidden transition-colors duration-700">(Giá chưa bao gồm VAT 8%)</p>
 
-                     <button id="orderBtn" class="w-full mt-4 relative overflow-hidden flex items-center justify-center px-10 py-[18px] text-[13px] font-bold tracking-[0.2em] uppercase bg-brand-gold/20 dark:bg-transparent border-2 border-brand-gold rounded-md transition-all duration-500 group cursor-pointer hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                     <button id="orderBtn" class="w-full mt-4 relative overflow-hidden flex items-center justify-center px-10 py-[18px] text-[13px] font-bold tracking-[0.2em] uppercase bg-brand-gold/20 dark:bg-transparent border-2 border-brand-gold rounded-none transition-all duration-500 group cursor-pointer hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
                          <div class="absolute inset-0 w-full h-full bg-brand-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
                          <span id="orderBtnText" class="flex items-center gap-3 relative z-10 text-brand-dark dark:text-brand-gold group-hover:text-brand-dark transition-colors duration-500">
                              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
@@ -473,7 +478,7 @@
         <div class="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
             <div class="flex flex-col md:flex-row items-center gap-16 lg:gap-24 max-w-6xl mx-auto">
                 <div class="w-full md:w-5/12 reveal-left">
-                    <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl dark:shadow-2xl border border-gray-300 dark:border-brand-gold/20 group transition-colors duration-700">
+                    <div class="relative w-full aspect-[4/5] rounded-none overflow-hidden shadow-xl dark:shadow-2xl border border-gray-300 dark:border-brand-gold/20 group transition-colors duration-700">
                         <div class="absolute inset-0 bg-brand-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
                         <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/thiet_ke.jpg" onerror="this.onerror=null;this.src='https://placehold.co/800x1000/1e140d/D4AF37?text=Che+Tac';" alt="Quá trình chế tác" class="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-700 ease-out">
                     </div>
@@ -495,7 +500,7 @@
                     </div>
                     
                     <div class="flex items-center justify-center md:justify-start gap-5 pt-8 border-t border-gray-300 dark:border-brand-gold/20 transition-colors duration-700">
-                        <div class="w-16 h-16 bg-white rounded-sm p-1.5 flex items-center justify-center shadow-md border border-gray-300 dark:border-brand-gold/30 transition-colors duration-700">
+                        <div class="w-16 h-16 bg-white rounded-none p-1.5 flex items-center justify-center shadow-md border border-gray-300 dark:border-brand-gold/30 transition-colors duration-700">
                             <img src="https://images.khoiminhcst.vn/uploads//images/2021/landingpage/trauvang/logo-small.svg" alt="Khởi Minh Triện Logo" class="w-full h-full object-contain mix-blend-multiply opacity-90">
                         </div>
                         <div class="flex flex-col text-left">
@@ -555,10 +560,10 @@
                 
                 <!-- BƯỚC 1 -->
                 <div class="flex flex-col md:flex-row items-center justify-between mb-24 md:mb-32 relative reveal-up">
-                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">01</div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-none border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">01</div>
                     
                     <div class="w-full md:w-1/2 text-center md:text-right mb-8 md:mb-0 md:pr-10 lg:pr-16">
-                        <div class="md:hidden w-10 h-10 rounded-full border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">01</div>
+                        <div class="md:hidden w-10 h-10 rounded-none border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">01</div>
                         <h3 class="text-2xl font-serif font-bold uppercase mb-4 tracking-wider text-brand-text dark:text-white transition-colors duration-700">Tạo Hình</h3>
                         <p class="text-[14px] leading-[1.8] font-light text-brand-muted dark:text-brand-gold-light/75 max-w-sm mx-auto md:ml-auto md:mr-0 transition-colors duration-700">
                             Khởi đầu bằng đất sét, một chất liệu của tự nhiên mềm dẻo. Dưới bàn tay điêu khắc gia, đất sét vô tri bỗng có hơi thở. Sức hấp dẫn nằm ở nhịp điệu thay đổi của hình khối dương và âm, của đặc và rỗng.
@@ -567,17 +572,17 @@
                     
                     <div class="w-full md:w-1/2 md:pl-10 lg:pl-16">
                         <div class="grid grid-cols-1 gap-3 max-w-sm mx-auto md:mx-0">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(1).jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x600/1e140d/D4AF37?text=Tao+Hinh';" alt="Tạo hình bằng đất sét" class="w-full aspect-square object-cover rounded-lg shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer relative z-10">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(1).jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x600/1e140d/D4AF37?text=Tao+Hinh';" alt="Tạo hình bằng đất sét" class="w-full aspect-square object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer relative z-10">
                         </div>
                     </div>
                 </div>
 
                 <!-- BƯỚC 2 -->
                 <div class="flex flex-col md:flex-row-reverse items-center justify-between mb-24 md:mb-32 relative reveal-up">
-                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">02</div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-none border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">02</div>
                     
                     <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:pl-10 lg:pl-16">
-                        <div class="md:hidden w-10 h-10 rounded-full border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">02</div>
+                        <div class="md:hidden w-10 h-10 rounded-none border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">02</div>
                         <h3 class="text-2xl font-serif font-bold uppercase mb-4 tracking-wider text-brand-text dark:text-white transition-colors duration-700">Tạo Khuôn</h3>
                         <p class="text-[14px] leading-[1.8] font-light text-brand-muted dark:text-brand-gold-light/75 max-w-sm mx-auto md:mr-auto md:ml-0 transition-colors duration-700">
                             Tác phẩm được hoàn thiện trên đất sét dương bản, sau đó đổ khuôn âm bản để chuyển sang các chất liệu vĩnh cửu như đồng nguyên chất, đảm bảo giữ trọn vẹn từng chi tiết tạo hình nguyên bản.
@@ -585,16 +590,16 @@
                     </div>
                     
                     <div class="w-full md:w-1/2 md:pr-10 lg:pr-16">
-                        <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Frame%201000003509.jpg" onerror="this.onerror=null;this.src='https://placehold.co/800x500/1e140d/D4AF37?text=Tao+Khuon';" alt="Quá trình tạo khuôn" class="w-full h-auto object-cover rounded-lg shadow-md border border-gray-300 dark:border-brand-gold/25 transition-all duration-500 max-w-sm mx-auto md:mx-0 md:ml-auto grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer relative z-10">
+                        <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Frame%201000003509.jpg" onerror="this.onerror=null;this.src='https://placehold.co/800x500/1e140d/D4AF37?text=Tao+Khuon';" alt="Quá trình tạo khuôn" class="w-full h-auto object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/25 transition-all duration-500 max-w-sm mx-auto md:mx-0 md:ml-auto grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer relative z-10">
                     </div>
                 </div>
 
                 <!-- BƯỚC 3 -->
                 <div class="flex flex-col md:flex-row items-center justify-between mb-24 md:mb-32 relative reveal-up">
-                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">03</div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-none border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">03</div>
                     
                     <div class="w-full md:w-1/2 text-center md:text-right mb-8 md:mb-0 md:pr-10 lg:pr-16">
-                        <div class="md:hidden w-10 h-10 rounded-full border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">03</div>
+                        <div class="md:hidden w-10 h-10 rounded-none border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">03</div>
                         <h3 class="text-2xl font-serif font-bold uppercase mb-4 tracking-wider text-brand-text dark:text-white transition-colors duration-700">Sơn Mài Truyền Thống</h3>
                         <p class="text-[14px] leading-[1.8] font-light text-brand-muted dark:text-brand-gold-light/75 max-w-sm mx-auto md:ml-auto md:mr-0 transition-colors duration-700">
                             Áp dụng kỹ thuật sơn mài truyền thống phức tạp qua hàng chục lớp sơn, mài, đánh bóng. Ngôn ngữ sơn mài thăng hoa cùng tạo hình đương đại tạo nên chiều sâu không gian huyền bí.
@@ -603,18 +608,18 @@
                     
                     <div class="w-full md:w-1/2 md:pl-10 lg:pl-16">
                         <div class="grid grid-cols-2 gap-2 max-w-sm mx-auto md:mx-0 relative z-10">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(2).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/1e140d/D4AF37?text=Son+Mai+1';" alt="Chế tác sơn mài 1" class="w-full aspect-[3/4] object-cover rounded shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(3).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/1e140d/D4AF37?text=Son+Mai+2';" alt="Chế tác sơn mài 2" class="w-full aspect-[3/4] object-cover rounded shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(2).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/1e140d/D4AF37?text=Son+Mai+1';" alt="Chế tác sơn mài 1" class="w-full aspect-[3/4] object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(3).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/1e140d/D4AF37?text=Son+Mai+2';" alt="Chế tác sơn mài 2" class="w-full aspect-[3/4] object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/20 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
                         </div>
                     </div>
                 </div>
 
                 <!-- BƯỚC 4 -->
                 <div class="flex flex-col md:flex-row-reverse items-center justify-between relative reveal-up">
-                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">04</div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-none border-2 border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-base lg:text-lg font-bold text-brand-gold z-10 hidden md:flex shadow-sm dark:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-colors duration-700">04</div>
                     
                     <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:pl-10 lg:pl-16">
-                        <div class="md:hidden w-10 h-10 rounded-full border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">04</div>
+                        <div class="md:hidden w-10 h-10 rounded-none border border-brand-gold bg-white dark:bg-brand-brown flex items-center justify-center font-serif text-sm font-bold text-brand-gold mx-auto mb-4 transition-colors duration-700">04</div>
                         <h3 class="text-2xl font-serif font-bold uppercase mb-4 tracking-wider text-brand-text dark:text-white transition-colors duration-700">Mạ Vàng & Hoàn Thiện</h3>
                         <p class="text-[14px] leading-[1.8] font-light text-brand-muted dark:text-brand-gold-light/75 max-w-sm mx-auto md:mr-auto md:ml-0 transition-colors duration-700">
                             Lớp áo choàng rực rỡ cuối cùng được khoác lên bằng kỹ thuật dát vàng lá thủ công hoặc mạ vàng 24K điện phân, mang lại độ sáng bóng sang trọng, bảo vệ tác phẩm trường tồn cùng thời gian.
@@ -623,9 +628,9 @@
                     
                     <div class="w-full md:w-1/2 md:pr-10 lg:pr-16">
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 max-w-sm mx-auto md:mx-0 md:ml-auto relative z-10">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(4).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+1';" alt="Kỹ thuật dát vàng 1" class="w-full aspect-[3/4] object-cover rounded shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(5).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+2';" alt="Kỹ thuật dát vàng 2" class="w-full aspect-[3/4] object-cover rounded shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
-                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(6).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+3';" alt="Kỹ thuật dát vàng 3" class="w-full aspect-[3/4] object-cover rounded shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer sm:block hidden">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(4).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+1';" alt="Kỹ thuật dát vàng 1" class="w-full aspect-[3/4] object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(5).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+2';" alt="Kỹ thuật dát vàng 2" class="w-full aspect-[3/4] object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer">
+                            <img src="https://images.khoiminhcst.vn/uploads//images/2024/hi-long-van/Image%20(6).jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x550/2a1b12/D4AF37?text=Dat+Vang+3';" alt="Kỹ thuật dát vàng 3" class="w-full aspect-[3/4] object-cover rounded-none shadow-md border border-gray-300 dark:border-brand-gold/30 transition-all duration-500 grayscale hover:grayscale-0 hover:border-brand-gold cursor-pointer sm:block hidden">
                         </div>
                     </div>
                 </div>
@@ -684,13 +689,13 @@
                 <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <h4 class="text-brand-text dark:text-brand-gold font-serif text-lg mb-6 uppercase tracking-widest font-semibold transition-colors duration-700">Kết Nối</h4>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded-md bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
+                        <a href="#" class="w-10 h-10 rounded-none bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
                             <i class="fa-brands fa-facebook-f text-sm"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-md bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
+                        <a href="#" class="w-10 h-10 rounded-none bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
                             <i class="fa-brands fa-instagram text-sm"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-md bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
+                        <a href="#" class="w-10 h-10 rounded-none bg-gray-50 dark:bg-brand-brown border border-gray-300 dark:border-brand-gold/30 flex items-center justify-center text-brand-text dark:text-brand-gold hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold dark:hover:text-brand-dark transition-all duration-300 shadow-sm">
                             <i class="fa-brands fa-youtube text-sm"></i>
                         </a>
                     </div>
@@ -710,15 +715,15 @@
         </div>
     </footer>
 
-    <div id="toastMsg" class="fixed top-24 left-1/2 -translate-x-1/2 z-[200] flex items-center gap-3 px-6 py-4 rounded-md shadow-2xl transform -translate-y-20 opacity-0 transition-all duration-500 pointer-events-none bg-white dark:bg-brand-card border-l-4 border-brand-gold">
-        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center shrink-0">
+    <div id="toastMsg" class="fixed top-24 left-1/2 -translate-x-1/2 z-[200] flex items-center gap-3 px-6 py-4 rounded-none shadow-2xl transform -translate-y-20 opacity-0 transition-all duration-500 pointer-events-none bg-white dark:bg-brand-card border-l-4 border-brand-gold">
+        <div class="w-8 h-8 rounded-none bg-brand-gold/20 flex items-center justify-center shrink-0">
             <i class="fa-solid fa-check text-brand-gold"></i>
         </div>
         <p class="text-sm font-medium text-brand-text dark:text-white" id="toastText">Gửi yêu cầu thành công!</p>
     </div>
 
     <div id="orderModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 px-4">
-        <div id="orderModalContent" class="bg-white dark:bg-[#140e0a] border border-gray-200 dark:border-brand-gold/20 w-full max-w-lg rounded-xl shadow-2xl transform scale-95 transition-all duration-300 overflow-hidden flex flex-col max-h-[90vh]">
+        <div id="orderModalContent" class="bg-white dark:bg-[#140e0a] border border-gray-200 dark:border-brand-gold/20 w-full max-w-lg rounded-none shadow-2xl transform scale-95 transition-all duration-300 overflow-hidden flex flex-col max-h-[90vh]">
             
             <div class="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-white/5">
                 <h3 class="font-serif text-xl font-medium text-brand-text dark:text-white tracking-wide">Thông Tin Đặt Hàng</h3>
@@ -728,7 +733,7 @@
             </div>
             
             <div class="px-6 py-5 overflow-y-auto custom-scrollbar">
-                <div class="bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-brand-gold/10 rounded-lg p-4 mb-6">
+                <div class="bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-brand-gold/10 rounded-none p-4 mb-6">
                     <p class="text-[12px] font-medium uppercase tracking-[0.15em] text-brand-gold mb-3">Tóm tắt tác phẩm</p>
                     <div class="flex justify-between items-start mb-2">
                         <span class="text-sm font-medium text-brand-text dark:text-white" id="modalProductName">Rắn Nghênh Tân</span>
@@ -743,35 +748,35 @@
                 <form id="orderForm" class="space-y-4">
                     <div>
                         <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Họ và tên <span class="text-red-500">*</span></label>
-                        <input type="text" name="ten" autocomplete="name" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                        <input type="text" name="ten" autocomplete="name" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Số điện thoại <span class="text-red-500">*</span></label>
-                            <input type="tel" name="sdt" autocomplete="tel" pattern="[0-9 .+\-]{9,14}" title="Nhập số điện thoại hợp lệ" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                            <input type="tel" name="sdt" autocomplete="tel" pattern="[0-9 .+\-]{9,14}" title="Nhập số điện thoại hợp lệ" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                         </div>
                         <div>
                             <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Email</label>
-                            <input type="email" name="email" autocomplete="email" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                            <input type="email" name="email" autocomplete="email" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-[1fr_120px] gap-4">
                         <div>
                             <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Tên công ty (nếu có)</label>
-                            <input type="text" name="congty" autocomplete="organization" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                            <input type="text" name="congty" autocomplete="organization" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                         </div>
                         <div>
                             <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Số lượng <span class="text-red-500">*</span></label>
-                            <input type="number" name="soluong" value="1" min="1" max="9999" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                            <input type="number" name="soluong" value="1" min="1" max="9999" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                         </div>
                     </div>
                     <div>
                         <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Địa chỉ nhận hàng <span class="text-red-500">*</span></label>
-                        <input type="text" name="diachi" autocomplete="street-address" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
+                        <input type="text" name="diachi" autocomplete="street-address" required class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20">
                     </div>
                     <div>
                         <label class="block text-[13px] font-medium text-gray-700 dark:text-brand-gold-light/70 mb-1.5">Ghi chú thêm</label>
-                        <textarea name="ghichu" rows="3" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-md px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20 resize-none"></textarea>
+                        <textarea name="ghichu" rows="3" class="w-full bg-transparent border border-gray-300 dark:border-white/10 text-brand-text dark:text-white rounded-none px-4 py-2.5 text-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors dark:bg-black/20 resize-none"></textarea>
                     </div>
                     <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0">
                     <p id="orderError" class="hidden text-[13px] text-red-500"></p>
@@ -780,7 +785,7 @@
 
             <div class="px-6 py-4 border-t border-gray-200 dark:border-white/5 bg-gray-50/50 dark:bg-black/10 flex justify-end gap-3">
                 <button type="button" id="cancelOrderBtn" class="px-5 py-2.5 text-[13px] font-medium text-gray-600 dark:text-brand-gold-light/60 hover:text-brand-text dark:hover:text-white transition-colors">Hủy Bỏ</button>
-                <button type="submit" form="orderForm" class="px-6 py-2.5 text-[13px] font-bold tracking-widest uppercase bg-brand-gold/20 dark:bg-brand-gold/10 border border-brand-gold text-brand-dark dark:text-brand-gold rounded hover:bg-brand-gold hover:text-brand-dark transition-all duration-300">Gửi Yêu Cầu</button>
+                <button type="submit" form="orderForm" class="px-6 py-2.5 text-[13px] font-bold tracking-widest uppercase bg-brand-gold/20 dark:bg-brand-gold/10 border border-brand-gold text-brand-dark dark:text-brand-gold rounded-none hover:bg-brand-gold hover:text-brand-dark transition-all duration-300">Gửi Yêu Cầu</button>
             </div>
         </div>
     </div>
@@ -864,14 +869,14 @@
                     navbar.className = "fixed top-0 left-0 w-full z-50 transition-all duration-500 flex justify-between items-center py-3 px-6 md:px-12 lg:px-24 nav-scrolled-dark";
                     navLinks.forEach(link => { link.className = "nav-link text-xs font-semibold uppercase tracking-[0.2em] transition-colors duration-300 text-white hover:text-brand-gold"; });
                     navLogo.className = "h-10 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 filter-gold";
-                    callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-md transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10";
+                    callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-none transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10";
                     callIcon.className = "fa-solid fa-phone text-sm text-brand-gold group-hover:text-brand-dark transition-colors duration-300";
                     callText.className = "text-xs font-semibold tracking-widest uppercase text-brand-gold group-hover:text-brand-dark transition-colors duration-300";
                 } else {
                     navbar.className = "fixed top-0 left-0 w-full z-50 transition-all duration-500 flex justify-between items-center py-3 px-6 md:px-12 lg:px-24 nav-scrolled-light";
                     navLinks.forEach(link => { link.className = "nav-link text-xs font-semibold uppercase tracking-[0.2em] transition-colors duration-300 text-brand-text hover:text-brand-gold"; });
                     navLogo.className = "h-10 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 filter-black";
-                    callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-md transition-all duration-300 group border-brand-text hover:bg-brand-text hover:text-white";
+                    callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-none transition-all duration-300 group border-brand-text hover:bg-brand-text hover:text-white";
                     callIcon.className = "fa-solid fa-phone text-sm text-brand-text group-hover:text-white transition-colors duration-300";
                     callText.className = "text-xs font-semibold tracking-widest uppercase text-brand-text group-hover:text-white transition-colors duration-300";
                 }
@@ -879,7 +884,7 @@
                 navbar.className = "fixed top-0 left-0 w-full z-50 transition-all duration-500 flex justify-between items-center py-5 px-6 md:px-12 lg:px-24 bg-transparent border-b border-transparent";
                 navLinks.forEach(link => { link.className = "nav-link text-xs font-semibold uppercase tracking-[0.2em] transition-colors duration-300 text-white hover:text-brand-gold"; });
                 navLogo.className = "h-20 md:h-28 lg:h-32 w-auto object-contain transition-all duration-500 filter-gold"; 
-                callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-md transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10";
+                callBtn.className = "hidden md:flex items-center gap-2 border px-4 py-2 rounded-none transition-all duration-300 group border-brand-gold hover:bg-brand-gold bg-brand-gold/10";
                 callIcon.className = "fa-solid fa-phone text-sm text-brand-gold group-hover:text-brand-dark transition-colors duration-300";
                 callText.className = "text-xs font-semibold tracking-widest uppercase text-brand-gold group-hover:text-brand-dark transition-colors duration-300";
             }
